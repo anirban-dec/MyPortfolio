@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+/* font-family: 'Patua One', cursive; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+.under{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10rem;
+}
+.under h1{
+    font-size: 3rem;
+}
+.under a{
+    text-decoration: none;
+    color: white;
+}
+.under p{
+    margin-top: 3rem;
+    font-size: 2rem;
+    border: 4px solid white;
+    background-color: #ff004f;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+body {
+    background-color: #171717;
+    color: white;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+
+#header .head-set {
+    display: flex;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: aliceblue;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #ff004f;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    transition: 0.2s;
+
+}
+
+.active {
+    color: #ff004f;
+}
+
+.logo {
+    margin-top: 138px;
+    font-size: 94px;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+    width: 35vw;
+
+}
+
+.header-text .htp2 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.resume{
+    text-align: center;
+    margin-top: 3rem;
+        
+}
+.resume a{
+    color: white;
+    font-size: 1.3rem;
+    border: 3px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #ff004f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    
+}
+
+/* --------------------------------------About------------------------------------- */
+
+.container-about {
+    padding: 10px 3px;
+}
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 img {
+    border-radius: 20px;
+    width: 32rem;
+}
+
+.about-col-2 {
+    margin-right: 1rem;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.about-desc {
+
+    margin-top: 56px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.bio {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.bio1 .education-p {
+    /* font-family: 'Patua One', cursive; */
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ff004f;
+    cursor: pointer;
+    line-height: 23px;
+}
+
+.bio1 .education-p span {
+    font-size: 1.3rem;
+    font-family: 'Patua One', cursive;
+    color: #ababab;
+}
+
+.bio1 .education-p:hover {
+    color: white;
+    transition: .2s;
+}
+
+.education-bio p {
+    color: #ff004f;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+    font-family: 'Patua One', cursive;
+}
+
+.education-bio span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    font-family: 'Patua One', cursive;
+}
+
+.about2 {
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 2rem;
+}
+
+.hobbies {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px;
+    cursor: pointer;
+
+
+}
+
+.hobby {
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 24rem;
+    height: 20rem;
+    font-size: 1.2rem;
+
+}
+
+.hobby .head {
+    font-size: 3rem;
+    font-weight: 700;
+    border: 2px solid wheat;
+    font-family: 'Bebas Neue', cursive;
+
+
+}
+
+.hobby p {
+    font-family: 'Patua One', cursive;
+}
+
+.hobby:hover {
+    font-size: 1.6rem;
+    width: 30rem;
+    height: 20rem;
+    background-color: #ff005163;
+    transition: .4s;
+    box-shadow: 5px 5px 30px 0 #ff004f;
+
+}
+
+/* -------------------------------------Project------------------------------ */
+.project .heading {
+    font-size: 4rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.project .project-p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 45%;
+    margin-left: 28%;
+    font-family: 'Patua One', cursive;
+    /* line-height: 10px; */
+    line-break: normal;
+}
+
+.project .project-p p {
+    font-family: 'Patua One', cursive;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 78px;
+    margin-left: 7rem;
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.pro-details p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.pro-details p:hover {
+    color: #ff004f;
+    transition: .2s;
+}
+
+.pro-details img {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 5px;
+    border: 2px solid #ff004f;
+
+}
+
+.pro-details img:hover {
+    box-shadow: 0px 0px 20px 0px #ff004f;
+    border: none;
+    transition: .2s;
+}
+
+/* -----------------------------------------------MyStory---------------------------------------- */
+
+
+.certification{
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 2rem;
+}
+
+.certis{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.certis img{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+.certis img:hover{
+    box-shadow: 0 0 30px 5px red;
+    transition: 0.2s;
+}
+
+
+
+/* ------------------------------------Contact---------------------------------------------- */
+.cnt-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    border: 6px solid #ff004f;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+.cnt-form{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+}
+
+.cnt-form input{
+    padding: 1.4rem;
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+
+}
+.cnt-form textarea{
+    padding: 1.4rem;
+    background: white;
+    border: 1px solid white;
+    height: 6rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.cnt-form button{
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: #f75e8e;
+    color: white;
+    align-self: center;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+.cnt-form button:hover{
+    background: #ff004f;
+    transition: .2s;
+}
+
+
+
+@media (max-width:1024px) {
+    .head-set img {
+        width: 29rem;
+        margin: 91px 0 0 0;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .about-col-1 img {
+        width: 34vw;
+        margin: 11rem 58px 0 0;
+        height: 20rem;
+    }
+
+    .bio1 .education-p span {
+        font-size: 1rem;
+        font-family: 'Patua One', cursive;
+        color: #ababab;
+    }
+
+    .bio {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 0 0 3rem;
+    }
+
+    .project1 {
+
+        margin-left: 2rem;
+
+    }
+
+    .pro-details img {
+        width: 17rem;
+        height: 14rem;
+
+    }
+
+    .mystory .story {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 3px solid white;
+        width: 96%;
+        height: 18rem;
+        margin-left: 15px;
+
+    }
+    .hobbies {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 40px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 19px 0 0 25%;
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width:840px) {
+    .project1 {
+
+        margin-left: 6rem;
+
+    }
+
+}
+
+@media (max-width:500px) {
+    #header .head-set {
+        display: inline;
+    }
+
+    .header-text {
+        margin-top: 8%;
+        font-size: 43px;
+        width: 79vw;
+    }
+
+    .header-text .htp2 {
+        font-size: 31px;
+        margin-top: 20px;
+    }
+
+    .head-set img {
+        width: 23rem;
+        margin: 0 0 0 -39px;
+    }
+
+    nav ul {
+        display: inline;
+    }
+
+    nav ul li a {
+
+        font-size: 26px;
+        color: aliceblue;
+        margin-bottom: 90px;
+        position: relative;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+        margin: 5rem 0 137px 0;
+        height: 67%;
+    }
+
+    .row {
+        display: inline;
+    }
+
+    .about-col-2 {
+        margin-right: 0;
+        color: aliceblue;
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .bio {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0 0;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bio1 {
+        margin: 3rem 0;
+        margin: 89px 0;
+        border: 2px solid white;
+        width: 100%;
+        height: 75vh;
+    }
+
+    .bio1 .education-p {
+        /* font-family: 'Patua One', cursive; */
+        font-size: 2rem;
+        font-weight: 600;
+        color: #ff004f;
+        cursor: pointer;
+        /* line-height: 23px; */
+        margin: 9px 0 0 0;
+    }
+    .hobbies {
+        display: inline;
+        cursor: pointer;
+    }
+    .hobby {
+        
+        width:auto;
+        
+    }
+    .hobby .head {
+        margin: 10px;
+    }
+
+    .project .heading {
+        font-size: 2rem;
+        margin-top: 7rem;
+        text-align: center;
+    }
+    .project .project-p {
+        
+        font-size: 19px;
+        width: 19rem;
+        margin-left: 33px;
+        font-family: 'Patua One', cursive;
+        
+    }
+    .project1 {
+      margin-top: 10rem; 
+      display: inline;
+    }
+    .pro-details{
+        margin-top: 4rem;
+    }
+    .pro-details img {
+        width: 11rem;
+        height: 10rem;
+    }
+
+    .mystory .heading {
+        display: inline;
+        height: 30vh;
+        text-align: center;
+        /* margin: 100px 15px 0px 15px; */
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+    .mystory .story {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        border: 3px solid white;
+        width: 96%;
+        height: 100%;
+        margin-left: auto;
+    }
+    .mystory .story-p {
+        width: auto;
+        height: auto;
+    }
+
+}
